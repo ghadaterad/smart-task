@@ -1,0 +1,363 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(./images/eid.jpg);
+    width: calc(100%-20px);
+    height: 70vh;
+    background-size: 100% 100%;
+    padding: 20px;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+    list-style-type: none;
+    margin-right: 4vh;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: rgb(255, 200, 0);
+    border-radius: 5px;
+    width: 50px;
+    height: 20px;
+    padding: 5px;
+}
+
+.logo p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section-head {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.section-head h1 {
+    color: yellow;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    text-shadow: 2px 1px 2px black;
+}
+
+.section-head p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cards {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px 20px;
+}
+
+.cards img {
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+
+.cards div {
+    width: 220px;
+}
+
+.first-card {
+    background-color: gray;
+    box-shadow: 1px 1px 2px 1px black;
+    text-align: center;
+    height: 220px;
+    color: white;
+    overflow: hidden;
+
+}
+
+.second-card {
+    background-color: yellow;
+    box-shadow: 1px 1px 2px 1px black;
+    text-align: center;
+    height: 220px;
+    overflow: hidden;
+
+}
+
+.third-card {
+    background-color: gray;
+    box-shadow: 1px 1px 2px 1px black;
+    text-align: center;
+    height: 220px;
+    color: white;
+    overflow: hidden;
+
+}
+
+.fourth-card {
+    background-color: yellow;
+    box-shadow: 1px 1px 2px 1px black;
+    text-align: center;
+    height: 220px;
+    overflow: hidden;
+
+}
+
+.cards div p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.cards div h1 {
+    color: black;
+}
+
+.section2-head {
+    color: yellow;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 1px 2px black;
+    margin-bottom: 20px;
+}
+
+.photo-parent {
+    width: calc(100% -80px);
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.child-1 {
+    background-image: url(./images/1.jpg);
+    background-size: 100% 100%;
+    width: 23%;
+}
+
+.child-2 {
+    background-image: url(./images/2.jpg);
+    background-size: 100% 100%;
+    width: 23%;
+
+}
+
+.child-3 {
+    background-image: url(./images/3.jpg);
+    background-size: 100% 100%;
+    width: 23%;
+}
+
+.child-4 {
+    background-image: url(./images/4.jpg);
+    background-size: 100% 100%;
+    width: 23%;
+}
+
+.child-5 {
+    background-image: url(./images/5.jpg);
+    background-size: 100% 100%;
+    width: 23%;
+
+}
+
+.child-6 {
+    background-image: url(./images/6.jpg);
+    width: 23%;
+    background-size: 100% 100%;
+}
+
+.child-7 {
+    background-image: url(./images/7.jpg);
+    background-size: 100% 100%;
+    width: 23%;
+}
+
+.child-8 {
+    background-image: url(./images/8.jpg);
+    background-size: 100% 100%;
+    width: 23%;
+}
+
+.contact {
+    margin-top: 40px;
+    background-image: url(./images/8.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conatact-child {
+    background-color: green;
+    opacity: 80%;
+    width: 50%;
+    height: 65vh;
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-head {
+    text-align: center;
+    color: white
+}
+
+.contact-p {
+    text-align: center;
+    color: white
+}
+
+.contact-child2 {
+    position: relative;
+    left: 10%;
+    top: 3%;
+    background-color: rgb(11, 71, 11);
+    width: 80%;
+    height: 40vh;
+    border-bottom: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-child3 {
+    border-bottom: 2px solid yellow;
+    background-color: rgb(5, 35, 11);
+    width: 98%;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 1%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact-child4 {
+    border-bottom: 2px solid yellow;
+    background-color: rgb(5, 35, 11);
+    width: 98%;
+    height: 20px;
+    margin-left: 1%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact-child3 input {
+    background-color: transparent;
+    border: none;
+
+}
+
+.contact-child4 input {
+    background-color: transparent;
+    border: none;
+}
+
+input::placeholder {
+    color: yellow;
+    margin-left: 20px;
+}
+
+.contact-child3 input {
+    width: 100%;
+}
+
+footer {
+    background-color: yellow;
+    height: 40vh;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.nav,
+.lorem,
+.address {
+    margin-top: 40px;
+    font-weight: 400
+}
+
+.son img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.son {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    background-color: yellow;
+}
+
+.social-icon div {
+    margin-left: 20px;
+}
+
+
+
+
+
+@media (max-width:767px) {
+    header {
+        height: 70vh;
+    }
+
+    .photo-parent div {
+        width: 46%;
+    }
+
+    .conatact-child {
+        overflow: hidden;
+    }
+
+    input::placeholder {
+        font-size: 10px;
+    }
+}
+
+
+@media (min-width:768px) {
+    header {
+        width: 100%;
+    }
+}
+
+@media (min-width:992px) {
+    header {
+        width: 100%;
+    }
+}
+
+@media (min-width:1200px) {
+    header {
+        width: 100%;
+    }
+}
