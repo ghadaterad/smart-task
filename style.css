@@ -4,44 +4,112 @@
     box-sizing: border-box;
 }
 
-header {
+
+
+.header {
     background-image: url(./images/eid.jpg);
     width: calc(100%-20px);
     height: 70vh;
     background-size: 100% 100%;
-    padding: 20px;
 
 }
 
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-li{
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: aliceblue;
-    list-style-type: none;
-    margin-right: 4vh;
-}
+.header .container .rwo input {
+        display: none;
+    }
 
-a:hover {
+.header .logo {
+    color: #fff;
+    font-size: 40px;
+    line-height: 100px;
     cursor: pointer;
-    background-color: rgb(255, 200, 0);
-    border-radius: 5px;
-    width: 50px;
-    height: 20px;
-    padding: 5px;
 }
 
-.logo p {
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.header .container .rwo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
 }
+
+.header .container .rwo .nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.header .container .rwo .nav ul li {
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.header .container .rwo .nav ul li a {
+    color: #f2eafacc;
+    margin-left: 70px;
+    text-decoration: none;
+}
+.header .container .rwo .nav ul li a:hover {
+    color: #fcfcfc;
+   
+}
+
+.header .container .rwo label {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    padding: 6px 5px;
+    border-radius: 5px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    display: none;
+}
+.header .container .rwo label span {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+    margin: 5px 0;
+}
+
+@media (max-width:700px) { 
+    .header .container .rwo .logo {
+        width: 80%;
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .header .container .rwo label {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .header .container .rwo .nav {
+        width: 100%;
+        margin: 20px 10px 0;
+    }
+    .header .container .rwo .nav ul {
+        display: none;
+        padding: 10px;
+    }
+    .header .container .rwo .nav ul li{
+        margin-top: -15px;
+        margin-bottom: -35px;
+    }
+    
+    .header .container .rwo input {
+        display: none;
+    }
+
+
+    .header .container .rwo input:checked ~ .nav ul {
+        display: block;
+    }
+}
+
+
 
 .section-head {
     display: flex;
@@ -66,6 +134,7 @@ a:hover {
 .cards {
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     gap: 20px 20px;
@@ -322,13 +391,12 @@ footer {
 }
 
 
-
-
-
-@media (max-width:767px) {
-    header {
-        height: 70vh;
+@media (max-width:500px) {
+    .header .container .rwo label {
+        margin-top: -60px;
+        margin-right: 20px;
     }
+}
 
     .photo-parent div {
         width: 46%;
