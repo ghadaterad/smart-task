@@ -416,6 +416,9 @@ footer {
     header {
         width: 100%;
     }
+       .photo-parent div {
+        width: 23%;
+    }
 }
 
 @media (min-width:992px) {
